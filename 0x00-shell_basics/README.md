@@ -1,0 +1,1 @@
+This script prints the absolut path of the current working directory. The commands pwd stands for print working directory.
