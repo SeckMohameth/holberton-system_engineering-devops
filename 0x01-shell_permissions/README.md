@@ -1,2 +1,2 @@
-The learning objective is to understand permission commands on the Linux terminal
+Learning objective is to understand permission commands on the Linux terminal
  
