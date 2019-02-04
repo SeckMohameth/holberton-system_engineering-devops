@@ -1,0 +1,1 @@
+For this project we are going over Shell, init files, variables, and expansions
