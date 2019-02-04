@@ -1,0 +1,1 @@
+For this project we are going over Shell, I/O Redirection, and special characters
