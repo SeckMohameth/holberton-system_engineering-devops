@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((DECIMAL#FF))
+echo "obase=16; DECIMAL"|bc
