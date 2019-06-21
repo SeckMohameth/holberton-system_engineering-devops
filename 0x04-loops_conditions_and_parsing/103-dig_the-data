@@ -3,5 +3,5 @@
 
 if [ -e apache-access.log ]
 then
-    awk '{ print $1 " " $9}' apache-access.log | sort -n | uniq -c | sort -nr
+    awk '{ print $1 " " $9}' apache-access.log | sort -n | uniq -c | sort -n
 fi
