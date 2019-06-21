@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#Write a Bash script that displays the content of the file /etc/passwd. Your script should only display: username, user id, Home directory path for the user
+
+while [ IFS ]
+do
+    if [ etc/passwd -e ]
+	then
+    fi
+done < /etc/passwd
