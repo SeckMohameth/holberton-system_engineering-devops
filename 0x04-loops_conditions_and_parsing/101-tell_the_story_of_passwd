@@ -11,6 +11,6 @@ do
 	PASSWORD="${line[1]}"
 	USERINFO="${line[4]}"
 
-	echo "The user $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY and rides $COMMAND/SHELL. $USER_ID's place is protected by the passcode $PASSWORD, more info about the user here: $USERINFO"
+	echo "The user $USERNAME is part of the $GROUP_ID gang, lives in $HOME_DIRECTORY and rides $COMMAND/SHELL. $USER_ID place is protected by the passcode $PASSWORD, more info about the user here: $USERINFO"
 
 done < /etc/passwd
