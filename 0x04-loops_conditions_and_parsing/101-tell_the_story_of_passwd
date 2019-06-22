@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 #Write a Bash script that displays the content of the file /etc/passwd, using the while loop + IFS.
 
-while IFS=: read -r line
+while IFS=: read -r -a line
 do
 	USERNAME="${line[0]}"
 	GROUP_ID="${line[3]}"
 	HOME_DIRECTORY="${line[5]}"
-	COMMAND="${line[6]}"
+	COMMAND/SHELL="${line[6]}"
 	USER_ID="${line[2]}"
 	PASSWORD="${line[1]}"
 	USERINFO="${line[4]}"
