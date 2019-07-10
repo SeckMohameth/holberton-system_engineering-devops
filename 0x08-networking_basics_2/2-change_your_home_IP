@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Write a script that changes IP addresses
+ifconfig eth0 127.0.0.2
+ifconfig eth0 8.8.8.8
