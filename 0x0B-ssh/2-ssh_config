@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# configuring the server so no need to enter password
+Host 35.196.116.225
+    HonstName ubuntu@35.196.116.225
+    IdentityFile ~/.ssh/holberton
+    PasswordAuthentication no
