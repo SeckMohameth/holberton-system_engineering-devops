@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Debuggin appache server
+sudo service apache2 start
