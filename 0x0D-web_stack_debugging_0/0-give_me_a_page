@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 #Debuggin appache server
+apt-get update
 service apache2 start
