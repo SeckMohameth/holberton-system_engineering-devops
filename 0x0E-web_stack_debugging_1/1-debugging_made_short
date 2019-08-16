@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#Shorter fix
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx stop
