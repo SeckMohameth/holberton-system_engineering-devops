@@ -1,0 +1,2 @@
+<h1>0x14. Mysql </h1>
+Learning the main role of a database. Covering topics like database replica, purpose of a replica, why database backups need to be stored in different physical locations, and what operation should you regularly perform to make sure that your database backup strategy actually works.
