@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     user_id = sys.argv[1]
     url = "https://jsonplaceholder.typicode.com/"
-    filename = user_id = sys.argv[1]
+    filename = user_id + ".cvs"
 
     employee = requests.get(url + "users/" + user_id)
     employee = employee.json()
