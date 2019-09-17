@@ -18,7 +18,6 @@ if __name__ == "__main__":
     tasks = requests.get(url + "todos?userId=" + user_id)
     tasks = tasks.json()
 
-
     task_list = []
     for x in tasks:
         task_list.append(x)
