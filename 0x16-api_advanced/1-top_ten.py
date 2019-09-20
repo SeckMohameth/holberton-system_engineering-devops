@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def number_of_subscribers(subreddit):
+def top_ten(subreddit):
     import requests
     url = 'https://www.reddit.com/r/{}/new.json?sort=new'.format(subreddit)
 
@@ -9,9 +9,9 @@ def number_of_subscribers(subreddit):
         'User-Agent': 'My User Agent 1.0'
     }
 
-    reditt = request.get(url, headers=headers)
+    reditt = requests.get(url, headers=headers)
 
-    if r.status_code != 200:
+    if reditt.status_code != 200:
         print(None)
         return
 
