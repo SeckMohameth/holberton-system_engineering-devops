@@ -1,8 +1,18 @@
 #!/usr/bin/env bash
-#Setting up load balancer
-sudo apt -y update
-sudo apt-get install software-properties-common
-sudo add-apt-repository ppa:vbernat/haproxy-1.6
-sudo apt-get install haproxy=1.6.\*
-sudo sed -i "\$a\\\\nfrontend app-frontend\n\tbind *:80\n\tmode http\n\tdefault_backend app-backend\n\nbackend app-backend\n\tbalance roundrobin\n\tserver 332-web-01 35.237.62.36:80 check\n\tserver 332-web-02 104.196.53.129:80 check" /etc/haproxy/haproxy.cfg
-sudo service haproxy restart
+# set up haproxy
+sudo apt-get -y update
+sudo apt-get -y install 'haproxy'
+cat > '/etc/haproxy/haproxy.cfg' <<EOF
+ EOF
+frontend wolfhopkins.tech
+bind *:80
+stats uri /haproxy?stats
+default_backend web_servers
+backend web_servers
+balance roundrobin
+server web-01 34.73.58.99
+server web-02 34.74.6.218
+EOF
+service haproxy reload
+service haproxy restart
+EOF
